@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteActivity" >
+
+  <Spinner
+      android:id="@+id/spinner_delete"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:contentDescription="Choose an entry to delete"
+      android:minHeight="32dp"
+      android:spinnerMode="dropdown" />
+
+  <Button
+      android:id="@+id/button_delete"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:onClick="DeleteElement"
+      android:text="Delete" />
+</RelativeLayout>

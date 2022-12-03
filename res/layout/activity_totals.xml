@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TotalsActivity">
+
+    <Spinner
+        android:id="@+id/spinner_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Choose a category to see totals/averages of"
+        android:minHeight="32dp"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/spinner_years"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner_categories"
+        android:contentDescription="Choose a year to see totals/averages of"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinner_months"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner_years"
+        android:contentDescription="Choose a month to see totals/averages of"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinner_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner_months"
+        android:contentDescription="Choose a day to see totals/averages of"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/year_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_days"
+        android:onClick="TotalByYear"
+        android:text="Total by Year" />
+
+    <Button
+        android:id="@+id/month_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/year_button"
+        android:onClick="TotalByMonth"
+        android:text="Total By Year/Month" />
+
+    <Button
+        android:id="@+id/day_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_button"
+        android:onClick="TotalByDay"
+        android:text="Total By Year/Month/Day" />
+
+    <Button
+        android:id="@+id/category_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day_button"
+        android:onClick="TotalByCategory"
+        android:text="Total By Just Category" />
+
+    <Button
+        android:id="@+id/cumulative_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_button"
+        android:onClick="TotalCumulative"
+        android:text="Cumulative Total" />
+
+</RelativeLayout>

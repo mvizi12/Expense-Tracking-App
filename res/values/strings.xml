@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Expense Tracking</string>
+    <string-array name="categories">
+        <item>Business</item>
+        <item>Educational</item>
+        <item>Family</item>
+        <item>Personal</item>
+        <item>Recreation</item>
+    </string-array>
+</resources>
