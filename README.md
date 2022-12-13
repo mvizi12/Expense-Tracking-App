@@ -1,2 +1,2 @@
 # Expense-Tracking-App
-See the ".doc" file for details on this app
+See the ".doc" file for specific details on this app
